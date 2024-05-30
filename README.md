@@ -59,7 +59,8 @@ Use the /status to simpily set the status.
 
 Feel free to submit issues and pull requests for any improvements or fixes.
 
-License
-This project is licensed under the MIT License.
+# License
+
+This project is licensed under the MIT License. See more info in the LICENSE.md file.
 
 # If you put anything besides a userid in the crossban/crossunban, it will say its banned but they wont be. Use userids, I will make a fix for this soon.
