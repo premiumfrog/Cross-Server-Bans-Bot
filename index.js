@@ -7,8 +7,11 @@ const {
 } = require("discord.js");
 const fs = require("fs");
 
-// Directly provide your Discord bot token here
-const DISCORD_TOKEN = "ADD YOUR TOKEN HERE";
+// Put your Discord bot token here in "Token Here"
+const DISCORD_TOKEN = "Token Here";
+
+// List of allowed user IDs
+const ALLOWED_USER_IDS = ["123456789012345678", "234567890123456789"]; // Replace with actual user IDs
 
 const client = new Client({
   intents: [
@@ -59,6 +62,15 @@ client.on("interactionCreate", async (interaction) => {
   const command = commands[interaction.commandName];
   if (!command) return;
 
+  // Check if the user is allowed to execute commands
+  if (!ALLOWED_USER_IDS.includes(interaction.user.id)) {
+    await interaction.reply({
+      content: "You are not authorized to use this command.",
+      ephemeral: true,
+    });
+    return;
+  }
+
   try {
     await command.execute(interaction, client);
   } catch (error) {
@@ -73,5 +85,5 @@ client.on("interactionCreate", async (interaction) => {
 client.login(DISCORD_TOKEN);
 
 console.log(
-  "Hey just so you know, the bot will throw errors if the person you want to ban isnt in all the servers that the bot is in but it will not break, normal thing that it does."
+  "Hey just so you know, the bot will throw errors if the person you want to ban isn't in all the servers that the bot is in but it will not break, normal thing that it does."
 );
