@@ -2,6 +2,8 @@
 
 A Discord bot that bans a user from all servers the bot is in.
 
+THIS IS NOT A BOT THAT LINKS BANS FROM OTHER NON RELATED SERVERS. I dispise those bots as they could be an abuse haven. Please do not use this bot to make a banning network/bot that links bans.
+
 ## Setup
 
 ### Prerequisites
