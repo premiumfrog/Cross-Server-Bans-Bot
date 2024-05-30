@@ -1,0 +1,26 @@
+{
+  "name": "cross-server-bans-bot",
+  "version": "1.0.0",
+  "description": "A discord bot that bans members across servers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/premiumfrog/Cross-Server-Bans-Bot.git"
+  },
+  "keywords": [
+    "Discord"
+  ],
+  "author": "Premiumfrog/Miller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/premiumfrog/Cross-Server-Bans-Bot/issues"
+  },
+  "homepage": "https://github.com/premiumfrog/Cross-Server-Bans-Bot#readme",
+  "dependencies": {
+    "discord.js": "^14.15.2",
+    "dotenv": "^16.4.5"
+  }
+}
