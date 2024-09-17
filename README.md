@@ -67,6 +67,6 @@ This project is licensed under the MIT License. See more info in the LICENSE.md 
 
 # If you put anything besides a userid in the crossban/crossunban, it will say its banned but they wont be. Use userids, I will make a fix for this soon.
 
-#Planned features 
+# Planned features 
 
 Picking this back up, going to add a few anti ratelimit settings, better experience, and very needed bug fixes. Please make issues in the issues tab and let me know asap
